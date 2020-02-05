@@ -1,0 +1,19 @@
+---
+etl_config_path: 'gs://intient-research-rdm-gcs-dev/public/chembl/config/ingestion_configuration.json'
+type_mapping_path: './etc/utils/mysql_bq_mapping.json'
+project: acn-research-dom-poc
+bigquery_dataset: chembl
+metadata_fields:
+  - name: source_name
+    type: STRING
+  - name: batch_id
+    type: STRING
+  - name: user_id
+    type: STRING
+  - name: create_datetime
+    type: DATETIME
+  - name: load_type
+    type: STRING
+  - name: delete_flag
+    type: INT64
+...
