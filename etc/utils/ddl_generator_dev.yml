@@ -1,8 +1,8 @@
 ---
-etl_config_path: 'gs://intient-research-rdm-gcs-dev/public/chembl/config/ingestion_configuration.json'
+etl_config_path: 'gs://path/to/ingestion_configuration.json'
 type_mapping_path: './etc/utils/mysql_bq_mapping.json'
-project: acn-research-dom-poc
-bigquery_dataset: chembl
+project: my-project
+bigquery_dataset: my-dataset
 metadata_fields:
   - name: source_name
     type: STRING
