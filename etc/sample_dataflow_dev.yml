@@ -1,14 +1,14 @@
 ---
 program_args:
-  input: gs://intient-research-rdm-gcs-dev/chembl_25_data/0/bioassay_ontology.csv
-  output: gs://intient-research-rdm-gcs-dev/chembl_25_data/tmp/bioassay_ontology.csv
-  reject: gs://intient-research-rdm-gcs-dev/chembl_25_data/tmp/reject/bioassay_ontology.csv
-  schema: gs://intient-research-rdm-gcs-dev/public/chembl/schema/bioassay_ontology.schema.json
-  etl_config_path: gs://intient-research-rdm-gcs-dev/public/chembl/config/ingestion_configuration.json
+  input: gs://path/to/input.csv
+  output: gs://path/to/output.csv
+  reject: gs://path/to/reject.csv
+  schema: gs://path/to/schema.json
+  etl_config_path: gs://path/to/ingestion_configuration.json
 pipeline_args:
   runner: DataflowRunner
   region: us-central1
-  project: acn-research-dom-poc
-  temp_location: gs://intient-research-rdm-gcs-dev/dataflow/tmp/
+  project: my-project
+  temp_location: gs://path/to/tmp/
   setup_file: ./setup.py
 ...
